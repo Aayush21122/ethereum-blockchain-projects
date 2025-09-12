@@ -4,6 +4,10 @@ A comprehensive collection of my smart contract projects on the Ethereum blockch
 📁 Project Structure
 This repository is organized into distinct folders, with each folder representing a separate project.
 
+
+
+
+
 .
 ├── airdrop/
 ├── erc1155-marketplace/
@@ -13,6 +17,10 @@ This repository is organized into distinct folders, with each folder representin
 ├── staking/
 ├── tokens/
 └── README.md
+
+
+
+
 
 📜 Project Descriptions
 Here is a brief overview of each project included in this repository.
@@ -111,8 +119,8 @@ Inspired by the work of various blockchain developers and educators.
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 🌐 Connect with Me
-GitHub: Aayush21122
+GitHub: [Aayush21122](https://github.com/Aayush21122)
 
-LinkedIn: LinkedIn
+LinkedIn: [www.linkedin.com/in/paghadar-aayush-837a50263](www.linkedin.com/in/paghadar-aayush-837a50263)
 
 Gmail: paayush192@gmail.com
