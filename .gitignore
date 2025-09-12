@@ -1,0 +1,8 @@
+# Dependency folder
+node_modules/
+
+# Local configuration files
+hardhat.config.js
+
+# Build artifacts and metadata
+metadata.json
