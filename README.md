@@ -167,6 +167,6 @@ Inspired by the work of various blockchain developers and educators.
 
 GitHub: [Aayush Paghadar](https://github.com/Aayush21122)
 
-LinkedIn: [www.linkedin.com/in/paghadar-aayush-837a50263](www.linkedin.com/in/paghadar-aayush-837a50263)
+LinkedIn: [https://www.linkedin.com/in/paghadar-aayush-837a50263](https://www.linkedin.com/in/paghadar-aayush-837a50263)
 
 Gmail: paayush192@gmail.com
