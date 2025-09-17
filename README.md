@@ -136,7 +136,7 @@ A smart contract for distributing tokens to multiple addresses at once. This pro
 
 To explore a project, simply navigate to its respective folder. Each folder contains the Solidity source code.
 
->>> Prerequisites
+> Prerequisites
 
 Node.js & npm
 
@@ -145,8 +145,11 @@ Hardhat (for development environment)
 # Compilation & Deployment
 
 npm install
+
 npx hardhat compile
+
 npx hardhat test
+
 </br>
 </br>
 
