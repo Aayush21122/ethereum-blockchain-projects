@@ -6,12 +6,13 @@ A comprehensive collection of my smart contract projects on the Ethereum blockch
 # 📁 Project Structure
 
 This repository is organized into distinct folders, with each folder representing a separate project.
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 .
 
 ├── airdrop/
