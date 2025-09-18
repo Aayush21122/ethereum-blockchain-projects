@@ -144,11 +144,17 @@ Hardhat (for development environment)
 
 # Compilation & Deployment
 
+```console
 npm install
+```
 
+```console
 npx hardhat compile
+```
 
+```console
 npx hardhat test
+```
 
 </br>
 </br>

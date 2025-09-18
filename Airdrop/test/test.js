@@ -1,6 +1,7 @@
 const { ethers } = require("hardhat");
 const { expect } = require("chai");
 const { merkleTree } = require("../scripts/merkletree.js");
+const { main } = require("../scripts/deploy.js");
 
 describe("Airdrop", async () => {
     let userProof, root, user1, user2, user3, user4, user5, user6, user7, user8, erc20, airdrop;
@@ -10,14 +11,7 @@ describe("Airdrop", async () => {
         [user1, user2, user3, user4, user5, user6, user7, user8] = await ethers.getSigners();
         console.log(user1.address);
 
-        const ERC20 = await ethers.getContractFactory("Pedalsup");
-        erc20 = await ERC20.deploy(user8.address);
-        await erc20.waitForDeployment();
-        console.log("ERC20", erc20.target);
-
-        const Airdrop = await ethers.getContractFactory("MerkleAirdrop");
-        airdrop = await Airdrop.deploy(erc20.target, root);
-        await airdrop.waitForDeployment();
+        ({ erc20, airdrop } = await main(root));
     });
 
     it("Should revert due to invalid proof", async () => {

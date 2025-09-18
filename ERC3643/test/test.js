@@ -1,5 +1,6 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
+const { main } = require("../scripts/deploy.js");
 
 describe("ERC3643 Style Token System", function () {
   let OnchainIDFactory, IdentityRegistryFactory, ComplianceFactory, TokenFactory;
@@ -9,22 +10,7 @@ describe("ERC3643 Style Token System", function () {
   before(async () => {
     [owner, issuer, user1, user2, user3, user4, user5] = await ethers.getSigners();
 
-    IdentityRegistryFactory = await ethers.getContractFactory("IdentityRegistry");
-    registry = await IdentityRegistryFactory.connect(owner).deploy();
-    await registry.waitForDeployment();
-
-    ComplianceFactory = await ethers.getContractFactory("Compliance");
-    compliance = await ComplianceFactory.connect(owner).deploy(registry.target, owner.address);
-    await compliance.waitForDeployment();
-
-    TokenFactory = await ethers.getContractFactory("Token");
-    token = await TokenFactory.connect(owner).deploy(
-      "Test Token",
-      "TTN",
-      registry.target,
-      compliance.target
-    );
-    await token.waitForDeployment();
+    ({ registry, compliance, token } = await main());
 
     await registry.connect(user1).registerIdentity(user1.address);
     await registry.connect(user2).registerIdentity(user2.address);
