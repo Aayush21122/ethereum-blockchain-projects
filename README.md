@@ -145,6 +145,10 @@ Hardhat (for development environment)
 # Compilation & Deployment
 
 ```console
+cd <foldername>
+```
+
+```console
 npm install
 ```
 
